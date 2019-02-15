@@ -2,7 +2,7 @@
 /* Global properties ======================================================== */
 body { 
 	background:#6f599c;
-	background-image:url(../images/bg.jpg) ;
+	/*background-image:url(../images/bg.jpg) ;*/
 	text-align:left;
 }
 
@@ -128,7 +128,7 @@ img {
 	font-style:italic;
 	font-weight:600;
 	font-size:20px;
-	position:absolute;		/* ���Զ�λ */
+	position:absolute;		/* ¾ø¶Ô¶¨Î» */
 	top:-50px;
 	overflow:hidden;
 }
