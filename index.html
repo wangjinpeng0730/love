@@ -21,13 +21,22 @@
 		<!-- 显示时间 -->
 		<script type="text/javascript" src="./jscss/time.js"></script>
 		<!-- 设置文字跟随鼠标 -->
-		<script type="text/javascript" src="./jscss/makesnake.js">
+		<script type="text/javascript" src="./jscss/makesnake.js"></script>
+			<script type="text/javascript">
+			function audioAutoPlay(id){
+       var audio = document.getElementById(id);
+    audio.play();
+    document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+    }, false);
+}
+audioAutoPlay('Jaudio');
 		</script>
+		
 		</head>
 		<body>
-		<!--<embed  src="./jscss/bgm.mp3" autostart=true hidden =true loop=true ></embed>-->
-	    <embed  src="./jscss/bgm.mp3" autostart=true hidden =true loop=true ></embed>
-	    <audio  src="./jscss/bgm.mp3" preload = "auto" autoplay ="autoplay" hidden = "true" loop="loop"></audio>
+		<embed  src="./jscss/bgm.mp3" autostart=true hidden =true loop=true ></embed>
+	    <audio id = "Jaudio" src="./jscss/bgm.mp3" preload = "auto" autoplay ="autoplay" hidden = "true" loop="loop"></audio>
 
 	<!-- thanks for watching! -->
 		<span id="span0" class="spanstyle">T</span><span id="span1" class="spanstyle">h</span>
